@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title> Cour de Science des données et calculs codage et découverte du terminal</title>
+</head>
+<body>
+
+<!-- Je n'ai pas pu terminer j'ai rejoins la visio à 16:30 donc j'ai pris du temps à assimiler les consignes sans les explications du début de cours.-->
+
+Je n'ai pas pu terminer j'ai rejoins la visio à 16:30 donc j'ai pris du temps à assimiler les consignes sans les explications du début de cours.
+<h1> Science des données et calculs - Codage et découverte du terminal</h1>
+
+<font color="red">Système d’exploitation</font>  = faire le lien entre nous et la machine.
+
+<br>4 Systèmes : Windows, Linux, Mac OS, Chrome OS
+<br>
+<br>But : désapprendre le système d’interface graphique
+<br>Shell = fenêtre, système d’exploitation on peut modifier l’interface graphique avec des mots c’est le programme qui permet de taper les commandes.
+<strong>Windows : powershell</strong>
+<br><img src="https://azurplus.fr/wp-content/uploads/1613689314_Difference-entre-PowerShell-et-linvite-de-commandes-Windows.png" alt="Différence entre PowerShell et l’invite de commandes Windows - Azur Plus">
+<video> <source src= "https://www.youtube.com/watch?v=WsBazcehcj4" type="video/webm"/></video>
+	<br>
+<br>
+Prompt/invit = une suite de lettres présente à chaque fois qu’une commande a été exécutée. ( PS C : \ Users\ annya> 
+2 principes sur un système d’exploitation : 
+	Un compte personnel 
+Avec nom de login et un mdp (password)
+Encrypté 
+Tout ça dans un fichier 
+
+Ensuite on arrive dans un environnement perso une fois qu’on s’est loger. Il y a d’abord des fichiers courent, des programmes, des variables d’environnement et des droits. 
+Dans la plupart des systèmes tout est fichier. Une machine a plusieurs composants : carte mère, batterie écran, alimentation, clavier, caméra, souris, hauts parleurs, micros, prise USB/HDMI…
+Tout ça ce sont des objets avec lesquels on va pouvoir communiquer, la carte mère doit pouvoir avoir des infos sur la batterie, sur quel clavier elle agit… 
+Quand j’appuie sur A, il faut que ça arrive sur la machine, que ce soit reconnu comme A et que la machine affiche A sur un écran. Le A s’est transformé en circuit électrique située quelque part. En fonction du programme la machine sait ce qu’elle doit faire selon ce que le clavier a envoyé.
+Pour qu’un écran lise dans un fichier il faut que le clavier sache écrire dans un fichier. Pour cela il y a des petits programmes chargés de faire la connexion entre la machine et le système de fichiers.  
+
+Arborescence = arbre (fondamentale en info). 
+L’arbre en informatique part de la racine en haut et non en bas. 
+Dans les branches il y a des nœuds. La racine est un nœud particulier. 
+LS = commande qui liste les nœuds et feuilles de la machine sur laquelle on est. « ~ » = racine du compte
+Un arbre est une structure inductive (peut se définir à partir des prédécesseurs). 
+Dans chaque arbre il y a une machine qui a un nom particulier. 
+Droits : lire (voir le contenu), écrire (modifier le contenu) et exécuter (se servir du fichier comme un programme)
+Ces droits peuvent être donnés à 3 catégories de personnes 
+-	Login 
+-	Groupe 
+-	Les autres 
+Souvent on appelle fichier les feuilles de notre arborescence. Un nœud (=répertoire ou directory) est aussi un fichier. 
+Deux sortes de nœuds : les feuilles que l’on appelle fichiers et ceux que l’on appelle répertoire. Mais les deux sont des FICHIERS. 
+Les droits sur les fichiers feuilles sont : lire, écrire, exécuter.
+Avoir le droit de lire sur un répertoire (r) c’est avoir le droit de connaître le contenu du répertoire. On peut savoir quels sont les répertoires dans ce répertoire. 
+Avoir le droit d’écrire dans le répertoire (w) c’est le droit de modifier un répertoire ou d’en créer d’autre. 
+Avoir le droit d’exécuter un répertoire (x) c’est le droit de passer à travers le répertoire qu’il y a dedans. On ne peut pas le lire ni le modifier mais passer au répertoire suivant. Mais on doit savoir ce qu’il y a derrière. 
+Ex on prend un fichier feuille on a plusieurs possibilités : 
+Moi = 		r w x | w x | r w 
+Groupe = 	r w x 
+Les autres=  	r w x 
+Si y a un d devant = c’est directory répertoire ex : drwx-rw-r
+Quand il n’y a rien c’est que c’est un fichier feuille. –rw-r--r-- 
+l=link = lien vers 
+Sur nos fichiers on peut changer les droits des groupes et les droits des autres sur nos fichiers. 
+Parfois on va autre part que chez nous, si on n’a pas les droits on ne peut rien faire. Chaque répertoire a un propriétaire et des droits. 
+L’endroit où on est à un moment donné c’est le répertoire courant. 
+Root a un droit particulier sur les autres il peut modifier les droits des autres, c’est un super utilisateurs. Dans les cas de piratages en entreprise c’est que quelqu’un s’est fait passer pour « Root ». 
+Pour les fichiers feuilles (fichiers) ils sont composés de : 
+Nom +  base . extension 
+Une base c’est une suite de lettres, chiffres et quelques symboles dont le plus courant est le signe « - «. On déconseille l’espace. 
+Ex de bonne base  controle_MDIND_2022
+Ou encore  01-photos_22-09-2021
+Si on met un point il faut quelque chose derrière. 
+Extension : .jpeg, .pdf, .txt etc. 
+L’extension donne une information. 
+Dans ce cours on verra .txt, .md (markdown), .py (python)., .html, .css
+Jpeg fait penser à une photo mais ne veut pas forcément dire que c’est une photo. 
+Un fichier (feuille) a un nom mais aussi un contenu.  
+Le contenu = suite de symboles. 
+Un fichier c’est une suite de symbole. Il y a un début et une fin. C’est ordonné. On ne peut pas accéder à une chose sans avoir accéder à ce qui était avant. 
+Un symbole c’est une convention. C’est quelque chose sur lequel on est d’accord dans sa définition.  Ex La Table ASCII, la première convention établie pour mettre en lien les symboles les plus utilisées dans les langues latines et sa représentation. Elle fait correspondre à un entier un symbole comme l’entier 66 correspond au A. 
+Les symboles peuvent être les lettres de l’alphabet, les chiffres, un son…
+Un fichier est une suite de valeurs sur lesquelles on s’est mis d’accord. 
+Quelles sont les valeurs manipulées par les ordinateurs ? 
+Un ordinateur communique essentiellement avec 0 et 1 (binaire). 
+À partir du binaire on regroupe un bit. Un octet c’est huit bits. Un octet se dit « byte » en anglais. 
+Dans la carte mère il y a un processeur/ALU (unité arithmétique et logique). Le processeur est associé à une mémoire/RAM qui stock de l’information. Elle est composée d’une suite d’octets. Qui dit suite dit qu’il y a un ordre. Entre le processeur et la rame il y a un pont. Le processeur va chercher les données dans la mémoire. 
+Que fait-on avec tous ces bits ? 
+On introduit le codage binaire  2 3 5 (=correspond à un entier 235 mais ce sont aussi des symboles qui utilisent la base 10)
+Base = langage dans lequel on exprime un nombre. 
+
+Dans la base 10 on a le droit à : 0 1 2 3 4 5 6 7 8 9
+On leur donne une valeur. 
+101 = cent un, un zero un = cent un en base dix 
+En info on parle en base deux (0 et 1). 
+1 0 1 = élément écrit en base 2. 
+235 c’est 2x100 (102) + 3x10 (101)+ 5x1(100)
+En base 2 : 
+1x22 +0x21+1x20= (5)10
+Base 3 3 symboles (0 1 2) 
+0<1<2
+(101)3
+1x32(9) +0x31(0) +1x3° (1) = 10
+/!\ = x° toujours égal à 1. 
+Pour passer de la base 10 à la base 2 :
+(235)10  (01 une suite de 0 et 1) doit valoir 235
+Base 2  base 10 = bijection 
+Pour passer de 10 à 2 
+Le plus à gauche des bits= bit de point fort et le plus à droite bit de point faible (toujours en position 0).cf schema
+Pour passer de l’alphabet aux entiers pour passer aux octets : 
+On établit une table de correspondance qui est une bijection entre une liste de symbole et les entiers. Ex la table ASCII. 
+A est un symbole (=/= a)
+L’espace est un symbole. 
+? aussi. 
+A=66 66 c’est (01000010) sur 8 bits. 
+La table ASCII est sur 7 bits. 
+ASCII betical order
+Si notre alphabet est plus grand que l’alphabet américain on a des pan grammes ce sont des phrases. 
+ISO/IEC 15 variantes selon les besoins des langues. 
+Suivre les recos de l’ANSI des bonnes pratiques numériques. 
+Explorer.exe > pour accéder aux fichiers Windows via VSL. 
+Pwd : trouver son chemin dans l’arborescence
+Mkdir c’est pour créer un répertoire
+Cd : changer de répertoire 
+cd.. : revenir en arrière 
+touch = créer un fichier/changer la date s’il existe déjà
+man touch : page du mannuel de la commande touch soit comment l’utiliser 
+voir pour installer gedit, emacs, nano ou vim. 
+> = redirection vers un fichier 
+>> = n’écrase pas, met à la suite 
+More : voir le contenu du fichier
+Less : voir le contenu du fichier et revenir en arrière
+Head : le début du fichier  
+Tail : fin du fichier 
+Man tail : 
+Exercice faire une arborescence : 
+FolderA 
+Grapevine.txt
+Grapevine.2
+FolderAA
+Toto.txt
+Titi.txt
+FolderB
+Toto.txt
+FolderC
+Tata.tx
+
+	</body>
+	</html>
