@@ -4,35 +4,33 @@
 	<meta charset="UTF-8">
 	<title> Cour de Science des données et calculs codage et découverte du terminal</title>
 </head>
-<body>
+<body style="background-color: lightgrey;">
 
-<!-- Je n'ai pas pu terminer j'ai rejoins la visio à 16:30 donc j'ai pris du temps à assimiler les consignes sans les explications du début de cours.-->
-
-Je n'ai pas pu terminer j'ai rejoins la visio à 16:30 donc j'ai pris du temps à assimiler les consignes sans les explications du début de cours.
 <h1> Science des données et calculs - Codage et découverte du terminal</h1>
 
-<font color="red"><strong>Système d’exploitation</strong></font>  = faire le lien entre nous et la machine.
+<strong><span style="color:red">Système d’exploitation</span></strong>  = faire le lien entre nous et la machine.
 
 <br>4 Systèmes : Windows, Linux, Mac OS, Chrome OS
 <br>
 <br> Le but est de désapprendre le système d’interface graphique
 <br>Shell est une fenêtre, un système d’exploitation on peut modifier l’interface graphique avec des mots. C’est le programme qui permet de taper les commandes.
 <strong>Windows : powershell</strong>
+<br>
 <br><img src="https://azurplus.fr/wp-content/uploads/1613689314_Difference-entre-PowerShell-et-linvite-de-commandes-Windows.png" alt="Différence entre PowerShell et l’invite de commandes Windows - Azur Plus">
-<video width="1280" height="720" controls> <source src="C:\Users\annya\Downloads\POWERSHELL POUR DEBUTANTS C'EST QUOI POWERSHELL.mp4" type="video/mp4"/></video>
+<br>
+<br><video width="1280" height="720" controls> <source src="C:\Users\annya\Downloads\POWERSHELL POUR DEBUTANTS C'EST QUOI POWERSHELL.mp4" type="video/mp4"/></video>
 	<br>
 <br>
-<audio src="POWERSHELL-POUR-DEBUTANTS-C_EST-QUOI-POWERSHELL.mp3" type="audio/mp3" controls></audio>
+<audio src="C:\Users\annya\Downloads\POWERSHELL-POUR-DEBUTANTS-C_EST-QUOI-POWERSHELL.mp3" controls></audio>
 <br>
 <a href="https://youtu.be/WsBazcehcj4">POWERSHELL pour débutants</a>
 <br>
 Prompt/invit = une suite de lettres présente à chaque fois qu’une commande a été exécutée. ( PS C : \ Users\ annya> 
 
 <strong>2 principes sur un système d’exploitation</strong> : 
-<br><ol><li>Un compte personnel</li>
-<br>
-Avec nom de login et un mdp (password) encrypté(tout ça dans un fichier).
-<br> 
+<br><ol><li>Un compte personnel(avec nom de login et un mot de passe "password" encrypté et tout cela dans un fichier)</li>
+
+
 <li>Un environnement personnel</li></ol>
 <br>
 On arrive dans l'environnement personnel une fois qu’on s’est logé. Il y a d’abord des fichiers courants, des programmes, des variables d’environnement et des droits. 
@@ -42,7 +40,7 @@ Tout ça ce sont des objets avec lesquels on va pouvoir communiquer, la carte m�
 Quand j’appuie sur A, il faut que ça arrive sur la machine, que ce soit reconnu comme A et que la machine affiche A sur un écran. Le A s’est transformé en circuit électrique située quelque part. En fonction du programme la machine sait ce qu’elle doit faire selon ce que le clavier a envoyé.
 Pour qu’un écran lise dans un fichier il faut que le clavier sache écrire dans un fichier. Pour cela il y a des petits programmes chargés de faire la connexion entre la machine et le système de fichiers.</p> 
 
-<font color="red"><strong>Arborescence</strong></font> = arbre (notion fondamentale en informatique). 
+<strong><span style="color:red">Arborescence</span></strong> = arbre (notion fondamentale en informatique). 
 L’arbre en informatique part de la racine en haut et non en bas. 
 Dans les branches il y a des nœuds. La racine est un nœud particulier. 
 <br> LS est la commande qui liste les nœuds et feuilles de la machine sur laquelle on est. « ~ » est la racine du compte
@@ -54,7 +52,7 @@ Un arbre est donc une <strong>structure inductive</strong> (il peut se définir 
 <br>
 <video width="1280" height="720" controls><source src="C:\Users\annya\Downloads\Les bases de l'informatique 5 _ l'arborescence..mp4" type="video/mp4"/></video>
 <br>
-<audio src="Les-bases-de-l_informatique-5-_-l_arborescence.mp3" type="audio/mp3" controls></audio>
+<br><audio src="C:\Users\annya\Downloads\Les-bases-de-l_informatique-5-_-l_arborescence..mp3"  controls></audio>
 <br><a href="https://youtu.be/vHl6QbsA4O8">Les bases de l'informatique 5 - L'arborescence</a>
 <br>
 <br>Dans chaque arbre il y a une machine qui a un nom particulier. 
@@ -91,7 +89,8 @@ Root a un droit particulier sur les autres il peut modifier les droits des autre
 	<br><img src="https://d33wubrfki0l68.cloudfront.net/794f22a6b63c1c7ad76636b195b85b3192b09f71/39aa9/assets/images/linux/lucidchart/d4e99828-d7bb-40ae-9c7e-f145c47350fc.png">
 	<br>
 	<br> <video width="1280" height="720" controls><source src="C:\Users\annya\Downloads\Linux - 07 - Droits et permissions.mp4" type="video/mp4"/></video>
-<br><audio src="Linux-07-Droits-et-permissions.mp3" type="audio/mp3" controls></audio>
+<br>
+<br><audio src="C:\Users\annya\Downloads\Linux-07-Droits-et-permissions.mp3" controls></audio>
 <br><a href="https://youtu.be/6PcJWfLadbI"> Linux - Droit et permissions</a>
 <br>Pour les fichiers feuilles (fichiers) ils sont composés de : 
 Nom +  base . extension<p>
@@ -107,20 +106,26 @@ Jpeg fait penser à une photo mais ne veut pas forcément dire que c’est une p
 Un fichier (feuille) a un nom mais aussi un contenu.  
 Le contenu = suite de symboles. 
 Un fichier c’est une suite de symbole. Il y a un début et une fin. C’est ordonné. On ne peut pas accéder à une chose sans avoir accéder à ce qui était avant. 
-Un symbole c’est une convention. C’est quelque chose sur lequel on est d’accord dans sa définition.  Ex La Table ASCII, la première convention établie pour mettre en lien les symboles les plus utilisées dans les langues latines et sa représentation. Elle fait correspondre à un entier un symbole comme l’entier 66 correspond au A. 
+Un symbole c’est une convention. C’est quelque chose sur lequel on est d’accord dans sa définition. Par exemple, la Table ASCII qui est la première convention établie pour mettre en lien les symboles les plus utilisées dans les langues latines et sa représentation. Elle fait correspondre à un entier un symbole comme l’entier 66 correspond au A. 
 Les symboles peuvent être les lettres de l’alphabet, les chiffres, un son…
 Un fichier est une suite de valeurs sur lesquelles on s’est mis d’accord.
 <br>
 <br> 
 Quelles sont les valeurs manipulées par les ordinateurs ? 
 <strong>Un ordinateur communique essentiellement avec 0 et 1 (binaire).</strong> 
-À partir du binaire on regroupe un bit. <font color="red"><strong>Un octet c’est huit bits</strong></font>. Un octet se dit « byte » en anglais. 
+À partir du binaire on regroupe un bit. <strong><span style="color:red">Un octet c’est huit bits</span></strong>. Un octet se dit « byte » en anglais. 
 Dans la carte mère il y a un processeur/ALU (unité arithmétique et logique). Le processeur est associé à une mémoire/RAM qui stock de l’information. Elle est composée d’une <strong>suite d’octets</strong>. Qui dit suite dit qu’il y a un ordre. Entre le processeur et la rame il y a un pont. Le processeur va chercher les données dans la mémoire. 
 <br>
+<br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Bits_and_Bytes.svg/741px-Bits_and_Bytes.svg.png" alt="Fichier:Bits and Bytes.svg — Wikilivres">
+<br>
+<br><video width="1280" height="720" controls><source src="C:\Users\annya\Downloads\Différences Bit _ Byte _ Octet - S2B #6.mp4" type="video/mp4"/></video>
+<br>
+<br><audio src="C:\Users\annya\Downloads\Différences-Bit-_-Byte-_-Octet-S2B-_6.mp3" controls></audio>
+<br><a href="https://www.youtube.com/watch?v=aUgESFvP3rU">Bit et Octet</a>
 <br>
 <h2>Que fait-on avec tous ces bits ?</h2>
-<br>
-<br>On introduit le codage binaire  2 3 5 (=correspond à un entier 235 mais ce sont aussi des symboles qui utilisent la base 10)
+
+<br>On introduit le codage binaire ==> 2 3 5 (=correspond à un entier 235 mais ce sont aussi des symboles qui utilisent la base 10)
 Base = langage dans lequel on exprime un nombre. 
 
 Dans la base 10 on a le droit à : 0 1 2 3 4 5 6 7 8 9
@@ -132,14 +137,14 @@ En info on parle en base deux (0 et 1).
 En base 2 : 
 1x22 +0x21+1x20= (5)10
 Base 3 3 symboles (0 1 2) 
-0<1<2
+0 est inférieur à un et 1 est inférieur à 2. 
 (101)3
 1x32(9) +0x31(0) +1x3° (1) = 10
 /!\ = x° toujours égal à 1. 
 Pour passer de la base 10 à la base 2 :
-(235)10  (01 une suite de 0 et 1) doit valoir 235
-Base 2  base 10 = bijection 
-Pour passer de 10 à 2 
+(235)10 ==> (01 une suite de 0 et 1) doit valoir 235
+<br>Base 2 ==> base 10 = bijection 
+<br>Pour passer de 10 à 2 
 Le plus à gauche des bits= bit de point fort et le plus à droite bit de point faible (toujours en position 0).cf schema
 Pour passer de l’alphabet aux entiers pour passer aux octets : 
 On établit une table de correspondance qui est une bijection entre une liste de symbole et les entiers. Ex la table ASCII. 
@@ -165,19 +170,7 @@ voir pour installer gedit, emacs, nano ou vim.
 More : voir le contenu du fichier
 Less : voir le contenu du fichier et revenir en arrière
 Head : le début du fichier  
-Tail : fin du fichier 
-Man tail : 
-Exercice faire une arborescence : 
-FolderA 
-Grapevine.txt
-Grapevine.2
-FolderAA
-Toto.txt
-Titi.txt
-FolderB
-Toto.txt
-FolderC
-Tata.tx
+Tail : fin du fichier
 
 	</body>
 	</html>
