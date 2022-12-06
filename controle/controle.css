@@ -23,14 +23,19 @@ ol li {
 ol li ol li {list-style-type: lower-latin;}
 ol li ol li ol li {list-style-type: lower-roman;}
 
-nav { font-size: 10mm;
+nav{
+	font-size: 10mm;
 	display: inline-block;
 float: right;
+}
+
+nav a { text-decoration: none;
+margin-left: 12px;
 background-color: lightblue;
 color: dimgrey;}
 
-nav a {text-decoration: none;}
-
-
+a:hover {background-color: lightblue;
+;
+color: aliceblue;}
 
 
