@@ -1,0 +1,6 @@
+div * p {color:red}
+.menu li .sel {color:darkred;}
+#menu > p {color:orange}
+h1 + h2 { margin-top: -5mm }
+h1.opener + h2 { margin-top: -5mm}
+h2 + p { margin-top:0.8em }

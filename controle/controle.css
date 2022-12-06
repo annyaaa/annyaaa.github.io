@@ -1,0 +1,36 @@
+body {
+	background: url("https://pvmasterdnid.github.io/Controle/images/cement.jpg") no-repeat;
+}
+
+h1 {
+	text-align: center;
+}
+h2 {
+	color: blue;
+	background-color: grey;
+}
+h2 p * {
+	text-align right left: justify;
+	margin-top: 16mm;}
+P.surligne {
+	background-color: seashell;
+}
+p span.surligne {background-color: yellow;}
+p ~div {background-color: slateblue;}
+ol li {
+	list-style-type: upper-roman;
+}
+ol li ol li {list-style-type: lower-latin;}
+ol li ol li ol li {list-style-type: lower-roman;}
+
+nav { font-size: 10mm;
+	display: inline-block;
+float: right;
+background-color: lightblue;
+color: dimgrey;}
+
+nav a {text-decoration: none;}
+
+
+
+
