@@ -1,0 +1,38 @@
+@media print {
+
+title {display: none;}
+	body { background-color: #fff;
+		 font-family: sans-serif;
+		 font-size: 14pt;
+  margin-right: 25px ;
+margin-left: 25px;
+text-align: justify;
+}
+
+body label input.objet { align-content: center; }
+h2 { font-family: cursive;
+	border-style: groove; 
+	text-align: center;
+	background-color: red;
+
+}
+	img.logo { margin-left: 545px;
+		height: 100px;
+		width: 100px; 
+	} 
+
+input {
+	border: none;
+	align-self: center;
+}
+
+input [type ]
+p.questions{
+	display: none;
+} /* Je souhaite que la question posée sur le fait d'être victime ou non d'un algorithme de tri n'apparaisse pas sur la lettre */
+
+p.rappel {
+	font-size: 10px;
+} /* Faire apparaître les éléments juridiques en gras en petit car moins important que le contenu de la lettre en lui même. Si le lecteur ne lit pas à ses risques et périls*/
+
+}
