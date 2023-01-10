@@ -1,0 +1,15 @@
+body { /* Modifications : la couleur de fond de page - la police - l'unité utilisée pour la taille de la police  */
+    background-color : palevioletred;
+    font-family :sans-serif;
+    font-size :22pt;
+        -webkit-print-color-adjust:exact !important;
+  print-color-adjust:exact !important;
+  }
+h1 {
+    background-color: mediumvioletred;
+    text-align: center;
+    border-style: solid;
+font-family: unset;
+ -webkit-print-color-adjust:exact !important;
+  print-color-adjust:exact !important;
+}

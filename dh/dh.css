@@ -1,0 +1,33 @@
+body {
+	background-color:indianred;
+	
+font-size: 16px;
+margin-right: 24px;
+margin-left: 24px;}
+
+h1 {
+	background-color: orangered;
+	text-align: center;
+	border-style: solid;
+font-family: unset;}
+
+
+img.bree { height: initial; 
+			width: initial;
+		align-content: center;
+	}
+nav a:hover {
+	display: inline-block;
+	text-decoration: none;
+	color: darkred;
+	background-color: orangered;
+size: 22px;
+
+}
+h2 {
+	color-interpolation-filters:linearRGB;
+}
+h2 p{
+	margin-left: 35px;
+	margin-right: 35px;
+}
